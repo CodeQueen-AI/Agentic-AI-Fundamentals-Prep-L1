@@ -1,4 +1,4 @@
-# OpenAI Agents 
+# Agents
 * **Agent** → Ek LLM ka instance jisme name, instructions aur tools set kiye jate hain
 * **Runner** → Agent ko chalata hai aur uska result return karta hai
 * **AsyncOpenAI** → OpenAI ka async client jo non-blocking calls karta hai
@@ -20,4 +20,5 @@
 
 5. **`enable_verbose_stdout_logging()`**
    → Matlab terminal par poora workflow aur debug logs dikhayega
+
 
