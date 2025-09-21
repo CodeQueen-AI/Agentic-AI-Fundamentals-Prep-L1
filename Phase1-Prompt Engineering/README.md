@@ -32,34 +32,31 @@ Temperature ek parameter hai jo AI ke **randomness** ko control karta hai
 **Default Value:** Usually `1.0`
 **Range:** `0.0 to 2.0`
 
+### 🔹 Top-K Sampling 
+
+* AI ke paas bahut sare possible words hote hain
+* **Top-K** ka matlab hai: AI sirf **top K best words** me se choose karega
+* Agar **K chhota** ho → sirf limited options, result **safe aur simple** hoga
+* Agar **K bada** ho → zyada options, result **creative aur variety** wala hoga
+
+👉 Example: Agar K = 3 hai, to AI sirf **top 3 words** me se ek choose karega
 
 
-### 2️⃣ Top-K Sampling
 
-**Definition:**
-Top-K ek technique hai jisme AI sirf **top K probable words** me se choose karta hai
+### 🔹 Top-P (Nucleus Sampling)
 
-**Details:**
+* Yahan AI number ke hisaab se nahi, **probability (chance)** ke hisaab se decide karta hai.
+* **Top-P** ka matlab: AI sirf unhi words me se choose karega jinki combined probability **P tak pohanchti hai**.
+* Agar **P chhota** ho → result **safe aur predictable** hoga.
+* Agar **P bada** ho → result **creative aur diverse** hoga.
 
-* K chhota ho → AI deterministic aur safe output deta hai
-* K bada ho → AI zyada creative aur diverse output deta hai
+👉 Example: Agar P = 0.9 hai, to AI sirf unhi words ko dekhega jinki probability ka total **90% tak hota hai**
 
-**Default Value:** Varies by model (e.g., 50)
-**Range:** 1 se infinity
+💡 Short & Easy Difference:
 
+* **Top-K** → fixed number of best words.
+* **Top-P** → fixed probability ka group of words.
 
-### 3️⃣ Top-P (Nucleus Sampling)
-
-**Definition:**
-Top-P probability ka **cumulative threshold** hai AI sirf top P probability words me se select karta hai
-
-**Details:**
-
-* P low → safe aur predictable output
-* P high → creative aur diverse output
-
-**Default Value:** 0.9
-**Range:** 0.0 – 1.0
 
 
 ### 4️⃣ Safe System Messages for Sensitive Data
@@ -115,4 +112,5 @@ Tree-of-Thought prompting **multiple reasoning paths** explore karne ke liye hai
 | Safe System Message | Protect sensitive info           | -       | -       | Secure prompts                    |
 | Chain-of-Thought    | Step-by-step reasoning           | -       | -       | Complex reasoning                 |
 | Tree-of-Thought     | Explore multiple reasoning paths | -       | -       | Complex problem solving           |
+
 
