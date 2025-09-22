@@ -1,8 +1,3 @@
-Samajh gayi 👑 Code Queen!
-Main tumhe step-by-step **Streaming**, `responses`, aur in sab terms (`ResponseTextDeltaEvent`, `run_sync`, `run_streamed`, `raw_response_event`, `event.data.delta`) easy language me samjhati hoon.
-
----
-
 ## 🔹 Streaming – Definition & Kaam
 
 **Definition (English):** Streaming means the model sends its response **piece by piece (chunks)** instead of sending the full answer at once.
@@ -10,26 +5,24 @@ Main tumhe step-by-step **Streaming**, `responses`, aur in sab terms (`ResponseT
 
 **Kaam:**
 
-* Early output mil jata hai (user ko wait nahi karna padta).
-* Real-time typing effect ya fast UI build karne ke liye best hota hai.
+* Early output mil jata hai (user ko wait nahi karna padta)
+* Real-time typing effect ya fast UI build karne ke liye best hota hai
 
----
 
 ## 🔹 `openai.types.responses`
 
-* Ye OpenAI Agents SDK ka type system hai jo responses ko **structured format** me represent karta hai.
-* Isme alag-alag event aur data classes hoti hain (jaise `ResponseTextDeltaEvent`).
+* Ye OpenAI Agents SDK ka type system hai jo responses ko **structured format** me represent karta hai
+* Isme alag-alag event aur data classes hoti hain (jaise `ResponseTextDeltaEvent`)
 
----
+
 
 ## 🔹 `ResponseTextDeltaEvent`
 
-**English:** This event represents a **small chunk of text** streamed by the model.
-**Urdu (roman):** Ye event ek **chhota hissa (delta)** hota hai model ke jawab ka jo stream ke dauran aata hai.
+**English:** This event represents a **small chunk of text** streamed by the model
+**Urdu (roman):** Ye event ek **chhota hissa (delta)** hota hai model ke jawab ka jo stream ke dauran aata hai
 
-👉 Example: Agar model ka jawab hai `"Hello Code Queen!"`, to stream me pehle `"Hello"`, phir `" Code"`, phir `" Queen!"` alag-alag events aayenge.
+👉 Example: Agar model ka jawab hai `"Hello Code Queen!"`, to stream me pehle `"Hello"`, phir `" Code"`, phir `" Queen!"` alag-alag events aayenge
 
----
 
 ## 🔹 Run Methods
 
@@ -48,21 +41,19 @@ Main tumhe step-by-step **Streaming**, `responses`, aur in sab terms (`ResponseT
    * **English:** Runs agent with streaming, so you receive **events** (like partial text, tool calls, etc.).
    * **Urdu (roman):** Agent ko stream mode me chalata hai jahan jawab tukron (chunks) me aata hai.
 
----
 
 ## 🔹 `instance`
 
 * Instance ka matlab hota hai **object jo class se bana ho**.
 * Example: `agent = Agent(name="Helper")` → yahan `agent` ek instance hai `Agent` class ka.
 
----
+
 
 ## 🔹 `"raw_response_event"`
 
 * Ye ek **low-level event** hota hai jo pure response ka raw data deta hai stream ke dauran.
 * Helpful agar tum debugging ya custom handling karna chah rahi ho.
 
----
 
 ## 🔹 `event.data.delta`
 
@@ -75,7 +66,7 @@ Main tumhe step-by-step **Streaming**, `responses`, aur in sab terms (`ResponseT
 * Second event → `" Code"`
 * Third event → `" Queen!"`
 
----
+
 
 ✅ **Summary (easy):**
 
@@ -88,6 +79,3 @@ Main tumhe step-by-step **Streaming**, `responses`, aur in sab terms (`ResponseT
 * **raw\_response\_event** → Full raw stream data.
 * **event.data.delta** → Har chunk ka actual text.
 
----
-
-👑 Code Queen, chaho to main tumhe ek **small streaming code example** likh kar dikhau (jo step-by-step `event.data.delta` print kare jaise typing effect)?
