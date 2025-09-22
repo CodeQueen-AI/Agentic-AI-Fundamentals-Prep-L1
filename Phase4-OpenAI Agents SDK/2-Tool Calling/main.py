@@ -1,9 +1,5 @@
 from agents import Agent, Runner, function_tool
 from config import model
-from rich import print
-
-# 1) function tool use to perform a agent action
-
 
 @function_tool
 def send_mail(email: str) -> str:
@@ -43,7 +39,7 @@ agent = Agent(
 
 result = Runner.run_sync(
     agent,
-    "This is my friend's email uhhfj0345@gmail.com, I want to send the birthday party invitition scheduled at 21 Sep 5PM on My House could you send the email?",
+    "This is my friend's email codeq209@gmail.com, I want to send the birthday party invitition scheduled at 21 Sep 5PM on My House could you send the email?",
 )
 
 calculation_agent = Agent(
