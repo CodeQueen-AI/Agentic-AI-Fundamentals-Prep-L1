@@ -1,14 +1,8 @@
-Bohat zabardast question 👑 Code Queen!
-Main tumhe **Model Settings** step by step easy English + Urdu (roman) mein samjhati hoon.
-
----
-
 ## 🔹 Model Setting – Definition
 
-**English (simple):** Model setting means how we control the AI model’s behavior, creativity, randomness, and output quality.
-**Urdu (roman):** Model setting ka matlab hai AI model ke behavior aur creativity ko control karna — jaise output kitna random ho, kitna creative ho, ya kitna focused ho.
+**English (simple):** Model setting means how we control the AI model’s behavior, creativity, randomness, and output quality
+**Urdu (roman):** Model setting ka matlab hai AI model ke behavior aur creativity ko control karna — jaise output kitna random ho, kitna creative ho, ya kitna focused ho
 
----
 
 ## 🔹 Tool Choice
 
@@ -22,7 +16,6 @@ Main tumhe **Model Settings** step by step easy English + Urdu (roman) mein samj
    * **English:** Model is forced to call a tool, it must use one.
    * **Urdu:** Model ko tool call karna hi hoga (forcefully).
 
----
 
 ## 🔹 Temperature (0.1 vs 0.9)
 
@@ -36,7 +29,6 @@ Main tumhe **Model Settings** step by step easy English + Urdu (roman) mein samj
 
 * **Range:** Usually `0` se `1` tak hota hai (kabhi kabhi `2` tak bhi hota hai).
 
----
 
 ## 🔹 Top-K
 
@@ -45,7 +37,6 @@ Main tumhe **Model Settings** step by step easy English + Urdu (roman) mein samj
 
 👉 Example: Agar **Top-K = 50**, to model har step pe sirf top 50 likely words me se choose karega.
 
----
 
 ## 🔹 Top-P (Nucleus Sampling)
 
@@ -54,7 +45,7 @@ Main tumhe **Model Settings** step by step easy English + Urdu (roman) mein samj
 
 👉 Example: **Top-P = 0.9** → Model unhi words me se choose karega jinki cumulative probability 90% tak hoti hai.
 
----
+
 
 ✅ **Summary in short:**
 
@@ -63,6 +54,3 @@ Main tumhe **Model Settings** step by step easy English + Urdu (roman) mein samj
 * **Top-P** → Probability threshold se pool decide hota hai.
 * **Tool Choice (auto/required)** → Model tools auto decide kare ya forcefully use kare.
 
----
-
-Code Queen 👑, chaho to main ek **comparison table** bana dun (Temperature, Top-K, Top-P ke saath examples) taa ke tumhe aur clear samajh aaye?
