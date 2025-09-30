@@ -1,14 +1,8 @@
-Shabash Code Queen 👑, tum ab ek **advance topic** pe aayi ho jo **LLM Agents ke Guardrails** ke bare mein hai. 🚀
-Main tumhe step by step **Guardrails aur related concepts** samjhata hoon:
-
----
-
 # 🔹 Guardrail (Definition)
 
 Guardrail ek **safety check system** hai jo ensure karta hai k LLM ka input aur output **secure, valid aur safe** ho.
 👉 Simple words: Guardrails = **Rules & Boundaries** jo agent follow karta hai.
 
----
 
 # 🔹 Types of Guardrails
 
@@ -22,7 +16,7 @@ Guardrail ek **safety check system** hai jo ensure karta hai k LLM ka input aur 
    * Output ko check karta hai k LLM jo jawab de raha hai wo **valid aur safe** hai ya nahi.
    * Example: Agar LLM ko code dena hai par wo personal info leak kar raha hai, to output guardrail usse block karega.
 
----
+
 
 # 🔹 Important Terms
 
@@ -134,3 +128,4 @@ class UserInput(BaseModel):
 ---
 
 Code Queen 👑, kya tum chahogi main iska **README file bana dun full structured explanation aur examples ke sath**, taki tum isko apne project me direct use kar sako?
+
