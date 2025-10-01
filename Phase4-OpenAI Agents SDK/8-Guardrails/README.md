@@ -25,14 +25,12 @@ Guardrail ek **safety check system** hai jo ensure karta hai k LLM ka input aur 
 * Ek wrapper (cover) hai jo context handle karta hai jisme guardrails run hote hain.
 * Usage: Guardrail ko batata hai k kis **run session** ka input/output check karna hai.
 
----
 
 ### 2) **GuardrailFunctionOutput**
 
 * Jab guardrail run hota hai, ye ek **standardized result** return karta hai.
 * Usage: Batata hai k guardrail ka result kya hai → pass, fail, ya block.
 
----
 
 ### 3) **InputGuardrailTripwireTriggered**
 
@@ -40,15 +38,12 @@ Guardrail ek **safety check system** hai jo ensure karta hai k LLM ka input aur 
 * Example: User input = `"DROP DATABASE"` → tripwire trigger → input reject.
 * Usage: Malicious ya unsafe input block karne ke liye.
 
----
-
 ### 4) **Tripwire Triggered (Definition)**
 
 * Tripwire = **safety alarm**.
 * Jab bhi unsafe ya invalid input/output detect hota hai → **tripwire trigger hota hai**.
 * Usage: System ko unsafe responses se bachana.
 
----
 
 ### 5) **Pydantic (BaseModel)**
 
@@ -65,31 +60,28 @@ class UserInput(BaseModel):
     age: int
 ```
 
-👉 Agar `age = "abc"` aaya to guardrail block kar dega.
+👉 Agar `age = "abc"` aaya to guardrail block kar dega
 
----
 
 ### 6) **Output Type**
 
 * Ye batata hai k guardrail ka result kis **format/type** mein hoga (bool, str, object, etc.).
 
----
 
 ### 7) **async**
 
 * Async = **asynchronous execution**.
 * Guardrails ko **fast & parallel** chalane ke liye async use hota hai.
 
----
+
 
 ### 8) **ctx: RunContextWrapper**
 
 * Guardrail function ke andar use hota hai jo current run ka **context information** deta hai.
 * Example: Ye check karega k current user kis session me hai aur uska input kya tha.
 
----
 
-### 9) **GuardrailFunctionOutput (Detailed)**
+### 9) **GuardrailFunctionOutput **
 
 * Har guardrail function ka final **output container** hota hai.
 * Batata hai guardrail ke result:
@@ -97,7 +89,6 @@ class UserInput(BaseModel):
   * ✅ Safe (pass)
   * ❌ Unsafe (fail/tripwire)
 
----
 
 ### 10) **InputGuardrailTripwireTriggered**
 
@@ -107,8 +98,6 @@ class UserInput(BaseModel):
   ```python
   raise InputGuardrailTripwireTriggered("Unsafe input detected")
   ```
-
----
 
 # ✅ Summary Table
 
@@ -124,9 +113,4 @@ class UserInput(BaseModel):
 | **Pydantic BaseModel**              | Data type validation                    | Schema banata hai          |
 | **Output Type**                     | Guardrail result ka format              | Structured response        |
 | **async**                           | Non-blocking execution                  | Speed & performance        |
-
----
-
-Code Queen 👑, kya tum chahogi main iska **README file bana dun full structured explanation aur examples ke sath**, taki tum isko apne project me direct use kar sako?
-
 
