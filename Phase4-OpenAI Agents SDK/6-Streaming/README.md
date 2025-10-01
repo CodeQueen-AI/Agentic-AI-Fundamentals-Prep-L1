@@ -1,4 +1,4 @@
-## 🔹 Streaming – Definition & Kaam
+## 🔹 Streaming 
 
 **Definition (English):** Streaming means the model sends its response **piece by piece (chunks)** instead of sending the full answer at once.
 **Urdu (roman):** Streaming ka matlab hai ke model apna jawab **thoda-thoda karke bhejta hai**, pura ek saath nahi.
@@ -78,4 +78,5 @@
 * **instance** → Class ka object.
 * **raw\_response\_event** → Full raw stream data.
 * **event.data.delta** → Har chunk ka actual text.
+
 
