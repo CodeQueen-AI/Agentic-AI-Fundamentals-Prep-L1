@@ -1,4 +1,4 @@
-# 🔹 Guardrail (Definition)
+# 🔹 Guardrail 
 
 Guardrail ek **safety check system** hai jo ensure karta hai k LLM ka input aur output **secure, valid aur safe** ho.
 👉 Simple words: Guardrails = **Rules & Boundaries** jo agent follow karta hai.
@@ -128,4 +128,5 @@ class UserInput(BaseModel):
 ---
 
 Code Queen 👑, kya tum chahogi main iska **README file bana dun full structured explanation aur examples ke sath**, taki tum isko apne project me direct use kar sako?
+
 
